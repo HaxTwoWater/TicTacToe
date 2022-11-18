@@ -1,10 +1,17 @@
+#On admet la bibliothèque tkinter et toute ses fonctions
 from tkinter import *
+#On admet la bibliothèque tkinter et toute ses fonctions
 from random import *
+#On admet de la biliothèque de tkinter la fonction messagebox
 from tkinter import messagebox
 
+#Definir la fonction morpion
 def morpion():
+    #On initialise les variables lf,c,l,j,q,w,li,co,di,dt,L,B,D,pa,ep,tr de type global
     global lf,c,l,j,q,w,li,co,di,dt,L,B,D,pa,ep,tr
+    #On intialise H de valeur 700
     H=700 ## taille de la fenetre
+    #On intialise root avec la
     root=Tk()
     canvas=Canvas(root,height= H, width= H,bg='skyblue')
     canvas.pack()
